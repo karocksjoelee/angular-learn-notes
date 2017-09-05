@@ -13,7 +13,7 @@ export class RealTimeService {
 
     getMessages() {
 
-        const observable = new Observable((observer) => {
+        return new Observable((observer) => {
             this.socket = socketio(this.url);
             this.socket.on('message', (data) => {
                 observer.next(data);
@@ -23,8 +23,6 @@ export class RealTimeService {
                 this.socket.disconnect();
             };
         });
-
-        return observable;
     }
 
 }
