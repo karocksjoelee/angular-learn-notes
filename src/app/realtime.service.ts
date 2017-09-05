@@ -4,7 +4,7 @@ import * as socketio from 'socket.io-client';
 
 export class RealTimeService {
 
-    private url = 'http://localhost:7500';
+    private url = 'http://localhost:5000';
     private socket;
 
     sendMessage(message) {

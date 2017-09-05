@@ -2,8 +2,7 @@
   {{title}}
 </h1>
 
-<h2>RealTime Date Demo</h2>
-<div *ngFor="let message of messages">
-  {{message.text}}
-</div>
-<input [(ngModel)]="message" /><button (click)="sendMessage()">Send</button>
+<button [routerLink]="['rx-crud']">RxJs CRUD</button>
+<button [routerLink]="['chat']">Real Time Chat</button>
+
+<router-outlet></router-outlet>

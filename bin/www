@@ -14,11 +14,11 @@ const figlet = require('figlet');
 
 // HTTP Server Setup .
 // ==========================================================================================
-const port = normalizePort(process.env.PORT || '7500');
+const port = normalizePort(process.env.PORT || '5000');
 app.set('port', port);
 
 const server = http.createServer(app).listen(port, (req, res) => {
-  console.log(chalk.green(figlet.textSync('MEAN-STARTER', { horizontalLayout:'full' })));
+  console.log(chalk.green(figlet.textSync('ANGULAR-LEARN', { horizontalLayout:'full' })));
   cm.logSuc(`[SERVER] Running at ${port}`);
 });
 
