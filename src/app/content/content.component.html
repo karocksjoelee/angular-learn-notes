@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<div class="wrapper">
+  <div class="card" style="width: 20rem;" *ngFor="let course of courses">
+    <div class="card-body">
+      <h4 class="card-title"><a [routerLink]="[course.ngRoutePath]">{{course.name}}</a></h4>
+      <p class="card-text">{{course.description}}</p>
+      <h5><span class="badge badge-pill badge-info">{{course.sourceTag}}</span></h5>
+    </div>
+  </div>
+</div>
