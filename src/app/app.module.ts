@@ -15,6 +15,7 @@ import { CourseItemComponent } from './content/course-item/course-item.component
 const routes = [
   { path: '', component: ContentComponent },
   { path: 'reddit', loadChildren: 'app/reddit-clone/reddit-clone.module#RedditCloneModule'},
+  { path: 'inventory', loadChildren: 'app/inventory-management/inventory-management.module#InventoryManagementModule'},
   { path: 'chat', loadChildren: 'app/real-time-chat/real-time-chat.module#RealTimeChatModule'},
   { path: 'rx-crud', loadChildren: 'app/rx-crud-service/rx-crud-service.module#RxCrudServiceModule' },
   { path: 'rx-chat', loadChildren: 'app/rx-chat/rx-chat.module#RxChatModule' }
