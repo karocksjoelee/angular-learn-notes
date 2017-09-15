@@ -12,4 +12,9 @@ export class RedditCloneComponent implements OnInit {
   ngOnInit() {
   }
 
+  addArticle(title: HTMLInputElement, link: HTMLInputElement) {
+    console.log(`Adding title : ${title.value} / link: ${link.value}`);
+    return false;
+  }
+
 }
