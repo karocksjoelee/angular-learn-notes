@@ -7,9 +7,15 @@ export class CoursesService {
   courses: Course[] = [
     {
       name: 'Reddit-Clone',
-      description: 'unfinished',
+      description: 'Finished - *ngFor="let article of sortedArticles()" ',
       sourceTag: 'ng-book-2',
       ngRoutePath: '/reddit'
+    },
+    {
+      name: 'Inventory Managment App',
+      description: 'unfinished',
+      sourceTag: 'ng-book-2',
+      ngRoutePath: '/inventory'
     },
     {
       name: 'Basic Chatting Service',
