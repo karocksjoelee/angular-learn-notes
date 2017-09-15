@@ -1,0 +1,10 @@
+.list-group-item {
+  margin: 0 auto;
+  margin-top: 20px;
+  float: none;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+

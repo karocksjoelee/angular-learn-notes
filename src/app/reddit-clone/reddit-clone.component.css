@@ -1,0 +1,15 @@
+.row {
+  padding: 50px;
+  margin: 20px;
+  background-color: #F5F5F5;
+}
+
+.col-centered{
+  margin: 0 auto;
+  float: none;
+}
+
+.button {
+  margin-left: 240px;
+}
+

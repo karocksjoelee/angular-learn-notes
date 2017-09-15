@@ -6,6 +6,12 @@ export class CoursesService {
 
   courses: Course[] = [
     {
+      name: 'Reddit-Clone',
+      description: 'unfinished',
+      sourceTag: 'ng-book-2',
+      ngRoutePath: '/reddit'
+    },
+    {
       name: 'Basic Chatting Service',
       description: 'unfinished',
       sourceTag: 'none',
