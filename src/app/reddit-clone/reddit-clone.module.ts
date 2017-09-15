@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { RedditCloneComponent } from './reddit-clone.component';
+import { ArticleComponent } from './article/article.component';
 
 const routes = [
   { path: '', component: RedditCloneComponent }
@@ -13,7 +14,8 @@ const routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [
-    RedditCloneComponent
+    RedditCloneComponent,
+    ArticleComponent
   ]
 })
 export class RedditCloneModule { }
