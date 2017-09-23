@@ -32,8 +32,9 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // API Routing . ( * Careful With The Order )
 // ==========================================================================================
 
+app.use('/api/users', users);
 app.use('/', index);
-app.use('/users', users);
+
 
 app.use(fallback(__dirname + '/dist/index.html'));
 
