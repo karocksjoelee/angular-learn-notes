@@ -1,3 +1,4 @@
-<p>
-  Inventory-Managment Works !
-</p>
+<app-products-list
+      [products]="products"
+      (onProductSelected)="productWasSelected($event)">
+</app-products-list>
